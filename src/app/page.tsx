@@ -1,4 +1,3 @@
-
 import AboutUsSection from "./_components/AboutUsSection";
 import CallToActionSection from "./_components/CallToActionSection";
 import Footer from "./_components/Footer";
@@ -9,14 +8,25 @@ import ServicesSection from "./_components/ServicesSection";
 
 export default function Home() {
   return (
-    <div className="h-[2000px] flex flex-col gap-44">
+    <div className="flex flex-col gap-60">
       <Header />
-      <RoomsSection />
-      <ServicesSection />
-      <PriceSection />
-      <AboutUsSection />
-      <CallToActionSection />
-      <Footer />
+      <div className="w-full max-w-[1200px] mx-auto">
+        <div className=" mx-auto flex flex-col gap-80 w-full">
+          <RoomsSection />
+          <ServicesSection />
+          <PriceSection />
+          <AboutUsSection />
+          <CallToActionSection />
+        </div>
+      </div>
+
+      <div className="hero-background text-gray-200">
+        <div className="w-full max-w-[1200px] mx-auto">
+          <div className=" mx-auto flex flex-col gap-80 w-full">
+            <Footer />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
