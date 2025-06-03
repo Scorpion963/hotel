@@ -7,7 +7,7 @@ export default async function PriceSection() {
       <div className="flex flex-col md:flex-row justify-between gap-6">
         <PricingCard
           title="Standard"
-          price={200}
+          price={79.99}
           includes={[
             "Free Wi-Fi",
             "Daily housekeeping",
@@ -19,8 +19,8 @@ Enjoy a comfortable stay with all the essentials to make your visit pleasant and
           backgroundColor={""}
         />
         <PricingCard
-          title="Premium"
-          price={400}
+          title="Platinum"
+          price={299.99}
           includes={[
             "All Standard amenities",
             "Ocean view room",
@@ -34,7 +34,7 @@ Upgrade your experience with stunning views and exclusive access to premium hote
         />
         <PricingCard
           title="Luxury"
-          price={800}
+          price={599.99}
           includes={[
             "All Premium amenities",
             "Private balcony",
@@ -71,7 +71,7 @@ async function PricingCard({
     >
       <h3 className="font-bold  text-xl">{title}</h3>
       <div className="space-y-1">
-        <div className="w-full text-4xl">{price} / night</div>
+        <div className="w-full text-4xl">{price}$ / night</div>
         <p className="text-gray-500 text-sm">{description}</p>
       </div>
       <div className="space-y-1 text-sm">

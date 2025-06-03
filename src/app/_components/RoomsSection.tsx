@@ -9,14 +9,14 @@ export default async function RoomsSection() {
         <RoomCard
           src="/images/standard.jpg"
           alt="Image of a single bed"
-          title="Standard Room"
+          title="Standard Single"
           description="A cozy and affordable option perfect for solo travelers or couples seeking comfort."
           rating={3}
         />
         <RoomCard
           src="/images/premium_3.jpg"
           alt="Image of a stylish premium room"
-          title="Platinum Room"
+          title="Platinum Suite"
           description="Elegant design with premium amenities, ideal for guests who appreciate extra comfort and style."
           rating={4}
         />
@@ -50,10 +50,10 @@ async function RoomCard({
       <div className="h-[32rem] relative bg-black">
         <Image src={src} fill={true} objectFit="cover" alt={alt} />
       </div>
-      <div className="space-y-1">
+      <div className="space-y-1 pt-2">
         <h3 className="font-bold text-lg">{title}</h3>
         <p className="text-sm text-gray-500">{description}</p>
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           {Array.from({ length: rating }, (_, i) => (
             <IoMdStar key={i} />
           ))}

@@ -8,10 +8,10 @@ import ServicesSection from "./_components/ServicesSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-60">
+    <div className="flex flex-col gap-80">
       <Header />
-      <div className="w-full max-w-[1200px] mx-auto">
-        <div className=" mx-auto flex flex-col gap-80 w-full">
+      <div className="w-full max-w-[1200px] mx-auto px-4 xl:px-0">
+        <div className="mx-auto flex flex-col gap-80 w-full">
           <RoomsSection />
           <ServicesSection />
           <PriceSection />
@@ -21,12 +21,14 @@ export default function Home() {
       </div>
 
       <div className="hero-background text-gray-200">
-        <div className="w-full max-w-[1200px] mx-auto">
-          <div className=" mx-auto flex flex-col gap-80 w-full">
-            <Footer />
-          </div>
-        </div>
+        <Wrapper>
+          <Footer />
+        </Wrapper>
       </div>
     </div>
   );
+}
+
+async function Wrapper({ children }: { children: React.ReactNode }) {
+  return <div className="w-full max-w-[1200px] mx-auto">{children}</div>;
 }
