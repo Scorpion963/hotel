@@ -48,9 +48,7 @@ export async function InstallButton({ dark = false }: { dark?: boolean }) {
       className={`px-12 py-2  rounded-sm font-bold  text-center hover:bg-gray-300 transition-colors active:bg-gray-500 w-fit ${
         dark ? "bg-black text-white" : "bg-white text-black"
       }`}
-      href="https://github.com/Scorpion963/Hotel_Management_System_1/releases/download/v0.0.2/Kelv-Inn-1.0.exe
-
-"
+      href="https://github.com/Scorpion963/Kelv-Inn-Resort/releases/download/v0.0.1/Kelv-Inn.Resort-1.0.exe"
     >
       INSTALL
     </Link>
