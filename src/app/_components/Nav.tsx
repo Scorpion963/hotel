@@ -7,7 +7,7 @@ export default function Nav() {
       <h1 className="text-3xl cursor-pointer">Kelv-Inn</h1>
       <div className="flex gap-6 text-xl font-bold">
         <Link
-          href="https://github.com/Scorpion963/Kelv-Inn-Resort/releases/download/v0.0.2/Kelv-Inn.Resort.Hotel.Management.System-1.0.exe"
+          href="https://github.com/Scorpion963/Kelv-Inn-Resort/releases/download/v0.0.3/Kelv-Inn.Resort.Hotel.Management.System-1.0.exe"
         >
           INSTALL
         </Link>
